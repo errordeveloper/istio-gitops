@@ -1,0 +1,66 @@
+apiVersion: v1
+items:
+- apiVersion: istio.io/v1alpha1
+  kind: IstioConfig
+  metadata:
+    creationTimestamp: 2017-08-10T11:33:00Z
+    name: route-rule-details-default
+    namespace: default
+    resourceVersion: "243449"
+    selfLink: /apis/istio.io/v1alpha1/namespaces/default/istioconfigs/route-rule-details-default
+    uid: a9f1f650-7dbf-11e7-9406-42010a80008b
+  spec:
+    destination: details.default.svc.cluster.local
+    precedence: 1
+    route:
+    - tags:
+        version: v1
+- apiVersion: istio.io/v1alpha1
+  kind: IstioConfig
+  metadata:
+    creationTimestamp: 2017-08-10T11:32:59Z
+    name: route-rule-productpage-default
+    namespace: default
+    resourceVersion: "243446"
+    selfLink: /apis/istio.io/v1alpha1/namespaces/default/istioconfigs/route-rule-productpage-default
+    uid: a9bc65de-7dbf-11e7-9406-42010a80008b
+  spec:
+    destination: productpage.default.svc.cluster.local
+    precedence: 1
+    route:
+    - tags:
+        version: v1
+- apiVersion: istio.io/v1alpha1
+  kind: IstioConfig
+  metadata:
+    creationTimestamp: 2017-08-10T11:33:00Z
+    name: route-rule-ratings-default
+    namespace: default
+    resourceVersion: "243448"
+    selfLink: /apis/istio.io/v1alpha1/namespaces/default/istioconfigs/route-rule-ratings-default
+    uid: a9e0d745-7dbf-11e7-9406-42010a80008b
+  spec:
+    destination: ratings.default.svc.cluster.local
+    precedence: 1
+    route:
+    - tags:
+        version: v1
+- apiVersion: istio.io/v1alpha1
+  kind: IstioConfig
+  metadata:
+    creationTimestamp: 2017-08-10T11:32:59Z
+    name: route-rule-reviews-default
+    namespace: default
+    resourceVersion: "243447"
+    selfLink: /apis/istio.io/v1alpha1/namespaces/default/istioconfigs/route-rule-reviews-default
+    uid: a9cfdfc4-7dbf-11e7-9406-42010a80008b
+  spec:
+    destination: reviews.default.svc.cluster.local
+    precedence: 1
+    route:
+    - tags:
+        version: v1
+kind: List
+metadata:
+  resourceVersion: ""
+  selfLink: ""
