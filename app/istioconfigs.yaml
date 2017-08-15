@@ -45,3 +45,18 @@ items:
     route:
     - tags:
         version: v1
+- apiVersion: istio.io/v1alpha1
+  kind: IstioConfig
+  metadata:
+    name: route-rule-reviews-test-v2
+    namespace: default
+  spec:
+    destination: reviews.default.svc.cluster.local
+    match:
+      httpHeaders:
+        cookie:
+          regex: ^(.*?;)?(user=jason)(;.*)?$
+    precedence: 2
+    route:
+    - tags:
+        version: v2
